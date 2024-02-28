@@ -1,12 +1,13 @@
-#copy paste this to jupyter notebook and download the csv file
+#copy paste this to jupyter notebook
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
+url='https://github.com/ape-with-helmet/Dse/blob/4f03561288bcc9f6350bcc13dd17bf4b705bb9d1/Logistical%20Regression/iris.csv?raw=true'
 # Importing the dataset
-dataset = pd.read_csv('iris.csv')
-#upload the downloaded iris dataset to jupyter
+dataset = pd.read_csv(url)
+#no download required
 dataset.describe()
 
 # Splitting the dataset into the Training set and Test set
