@@ -1,3 +1,4 @@
+#copy paste this to jupyter notebook and download the csv file
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
