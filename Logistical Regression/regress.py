@@ -38,3 +38,7 @@ res += "-"*65+"\n"
 res += "\n".join("{:<10} | {:<10} | {:<10} | {:<13} | {:<10}".format(x, y, a, b, c) for x, y, a, b, c in zip(y_test, y_pred, probs_y[:,0], probs_y[:,1], probs_y[:,2]))
 res += "\n"+"-"*65+"\n"
 print(res)
+
+from sklearn.matrix import confusion_matrix
+cm = confusion_matrix(y_test,y_pred)
+print(cm)
